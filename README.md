@@ -1,6 +1,6 @@
 # ICO Dashboard
 
-![alt text]()
+![alt text](https://github.com/somanshu63/ICO-Dashboard/blob/main/ICO-Dashboard-Preview.png)
 
 # Basic Overview - [Live Demo]()
 
