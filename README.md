@@ -2,7 +2,7 @@
 
 ![alt text](https://github.com/somanshu63/ICO-Dashboard/blob/main/ICO-Dashboard-Preview.png)
 
-# Basic Overview - [Live Demo]()
+# Basic Overview - [Live Demo](https://ico-dashboard-sg.vercel.app/)
 
 # Build/Run
 
