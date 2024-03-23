@@ -1,0 +1,408 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* common  */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto Flex", sans-serif;
+}
+:root {
+  --light-pink: #d29dd8;
+  --heading: #7051bc;
+  --black-text: black;
+  --gray-text: #88828e;
+}
+.app {
+  background-image: linear-gradient(white 50%, #efefef, #f4f4f4);
+  padding: 90px 150px 70px 150px;
+}
+.heading-color {
+  color: var(--heading);
+}
+.gray-color {
+  color: #cbd3e4;
+}
+.border-color {
+  color: var(--light-pink);
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.section {
+  border: 1.8px solid var(--light-pink);
+  border-radius: 25px;
+  margin-bottom: 36px;
+  padding: 38px 38px 32px 45px;
+}
+.fs-10 {
+  font-size: 10px !important;
+}
+.fs-12 {
+  font-size: 12px !important;
+}
+.fs-13 {
+  font-size: 13px !important;
+}
+.fs-14 {
+  font-size: 14px !important;
+}
+.fs-15 {
+  font-size: 15px !important;
+}
+
+/* header  */
+.hexagon-btn:nth-child(1) {
+  margin-right: 12px;
+}
+.hexagon-btn {
+  border: 1.5px solid var(--light-pink);
+  padding: 16px 22px;
+  border-radius: 20px;
+  background-color: #fff;
+}
+.header {
+  margin-bottom: 49px;
+}
+.middle {
+  height: 45px;
+  width: 105px;
+  background-color: #fff;
+  border-top: 1.5px solid var(--light-pink);
+  border-bottom: 1.5px solid var(--light-pink);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  position: relative;
+}
+.box {
+  position: absolute;
+  height: 39px;
+  width: 39px;
+  background-color: #fff;
+  border-radius: 12px;
+  transform: rotate(45deg);
+  bottom: 0.5;
+  z-index: -1;
+}
+.box1 {
+  left: -10px;
+  border-bottom: 1.5px solid var(--light-pink);
+  border-left: 1.5px solid var(--light-pink);
+}
+.box2 {
+  right: -10px;
+  border-top: 1.5px solid var(--light-pink);
+  border-right: 1.5px solid var(--light-pink);
+}
+
+/* token */
+.token {
+  background-image: radial-gradient(circle at bottom, #fff, #f4e8f9);
+}
+.balance {
+  border: 1.5px solid var(--light-pink);
+  background-color: white;
+  padding: 15px;
+  font-size: 40px;
+  font-weight: 300;
+  border-radius: 20px;
+  color: var(--heading);
+  margin: 18px 0;
+}
+.description-black {
+  color: var(--black-text);
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.description-gray {
+  color: var(--gray-text);
+  font-size: 15px;
+}
+.soulcoin {
+  padding: 28px;
+  border: 1.5px solid var(--light-pink);
+  border-radius: 20px;
+  background-color: white;
+  /* width: 35%; */
+}
+.soulcoin-image {
+  margin: 0 26px;
+}
+.coin-text {
+  font-size: 14px;
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+.coin-name {
+  color: var(--heading);
+  font-size: 15px;
+  font-weight: 700;
+}
+.wPB-container {
+  position: relative;
+}
+.white-paper-btn {
+  background-image: radial-gradient(circle at bottom, #fff, #f4e8f9);
+  font-size: 14px;
+  font-weight: 600;
+  height: 45px;
+  border-radius: 20px;
+  border: 1.5px solid var(--light-pink);
+  width: 95%;
+  margin-left: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxWPB {
+  position: absolute;
+  height: 38.5px;
+  width: 38.5px;
+  background-color: #fff;
+  border-radius: 12px;
+  transform: rotate(45deg);
+  z-index: 2;
+  top: 3.2px;
+}
+.boxLeft {
+  left: 5px;
+  background-image: linear-gradient(to right, #f5e9f9, #f7eefa);
+  border-bottom: 1.5px solid var(--light-pink);
+  border-left: 1.5px solid var(--light-pink);
+}
+.boxRight {
+  right: 3px;
+  background-image: linear-gradient(to left, #f5e9f9, #f7eefa);
+  border-top: 1.5px solid var(--light-pink);
+  border-right: 1.5px solid var(--light-pink);
+}
+.currency {
+  border: 1.5px solid var(--light-pink);
+  border-radius: 15px;
+  background-color: white;
+  margin: 18px 0;
+}
+.calculation-text {
+  font-size: 20px;
+  font-weight: 300;
+  padding-left: 12px;
+}
+.currency-listdown {
+  border-left: 1.5px solid var(--light-pink);
+  color: var(--light-pink);
+  padding: 10px 12px 10px 20px;
+  font-size: 14px;
+}
+.arrow {
+  font-size: 28px;
+  margin-left: 12px;
+}
+
+/* tokenomics */
+.tokenomics {
+  background-image: radial-gradient(circle at top, #fff 30%, #f4e8f9);
+}
+.chart {
+  margin-top: -12px;
+  margin-left: -12px;
+}
+.dT,
+.kM {
+  margin-left: 10px;
+  padding: 16px 12px;
+}
+.dT {
+  width: 158px;
+}
+.kM {
+  width: 98px;
+}
+
+/* roadmap */
+.roadmap {
+  background-image: radial-gradient(circle at top, #fff 35%, #f4e8f9);
+}
+.arrow-down {
+  color: #cbd3e4;
+  margin-left: 15px;
+  font-size: 28px;
+}
+.arrow-down-pink {
+  color: var(--light-pink);
+}
+.li {
+  padding: 16px 0;
+  border-bottom: 1.5px solid #cbd3e4;
+}
+.li:nth-child(1) {
+  border-bottom: 1.5px solid var(--light-pink);
+  padding-top: 0;
+}
+.li:nth-last-child(1) {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.roadmap-image {
+  height: 100%;
+}
+
+/* FAQs */
+.faqs {
+  margin-top: -4px;
+}
+.faq {
+  border: 1.5px solid #cbd3e4;
+  border-radius: 15px;
+  margin-bottom: 6px;
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq:nth-child(1) {
+  border-color: var(--light-pink);
+  background-image: linear-gradient(to top right, #fff, #f4e8f9);
+}
